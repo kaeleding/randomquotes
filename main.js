@@ -16,6 +16,9 @@ function getQuote() {
 function displayQuote(quote) {
   const quoteText = document.querySelector(".quote-text");
   quoteText.textContent = quote;
+
+  const tweetButton = document.querySelector(".tweet");
+  tweetButton.setAttribute("href", `https://twitter.com/share?text=${quote}`);
 }
 
 const newQuote = document.querySelector(".new-quote");
